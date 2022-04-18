@@ -7,5 +7,6 @@ ID|Problem|URI
 1|Two Sum|[Solution](https://github.com/mezdelex/LeetCode/blob/main/C%2B%2B/1.%20Two%20Sum/solution.cpp)
 9|Palindrome Number|[Solution](https://github.com/mezdelex/LeetCode/blob/main/C%2B%2B/9.%20Palindrome%20Number/solution.cpp)
 13|Roman to Integer|[Solution](https://github.com/mezdelex/LeetCode/blob/main/C%2B%2B/13.%20Roman%20to%20Integer/solution.cpp)
+14|Longest Common Prefix|[Solution](https://github.com/mezdelex/LeetCode/blob/main/C%2B%2B/14.%20Longest%20Common%20Prefix/solution.cpp)
 
 
