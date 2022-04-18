@@ -50,7 +50,6 @@ public:
 
     void runTests()
     {
-
         vector<tuple<vector<string>, string>> tests{
             {{"paco", "pac", "paaaa"}, "pa"},
             {{"p"}, "p"},
