@@ -9,5 +9,6 @@ ID|Problem|URI
 13|Roman to Integer|[Solution](https://github.com/mezdelex/LeetCode/blob/main/C%2B%2B/13.%20Roman%20to%20Integer/solution.cpp)
 14|Longest Common Prefix|[Solution](https://github.com/mezdelex/LeetCode/blob/main/C%2B%2B/14.%20Longest%20Common%20Prefix/solution.cpp)
 20|Valid Parentheses|[Solution](https://github.com/mezdelex/LeetCode/blob/main/C%2B%2B/20.%20Valid%20Parentheses/solution.cpp)
+21|Merge Two Sorted Lists|[Solution](https://github.com/mezdelex/LeetCode/blob/main/C%2B%2B/21.%20Merge%20Two%20Sorted%20Lists/solution.cpp)
 
 
