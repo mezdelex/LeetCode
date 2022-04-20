@@ -58,19 +58,21 @@ public:
         for (int i = 0; i < tests.size(); ++i)
         {
             ListNode *temp = mergeTwoLists(get<0>(tests[i]), get<1>(tests[i]));
+
             while (temp && get<2>(tests[i]))
             {
-                if (temp->val == get<2>(tests[i])->val)
+                if (temp->val != get<2>(tests[i])->val)
                 {
-                    temp = temp->next;
-                    get<2>(tests[i]) = get<2>(tests[i])->next;
+                    cout << "Test" << i << ": Failed" << endl;
+                    break;
                 }
+
+                temp = temp->next;
+                get<2>(tests[i]) = get<2>(tests[i])->next;
             }
 
             if (!temp && !get<2>(tests[i]))
                 cout << "Test" << i << ": OK" << endl;
-            else
-                cout << "Test" << i << ": Failed" << endl;
 
             delete get<0>(tests[i]);
             delete get<1>(tests[i]);
