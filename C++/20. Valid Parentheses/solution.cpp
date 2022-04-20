@@ -21,16 +21,17 @@ public:
 
         for (int i = 0; i < s.size(); ++i)
         {
-            if (stack.empty())
+            if (!stack.empty() && map[stack.top()] == s[i])
+            {
+                stack.pop();
+            }
+            else
             {
                 if (!map[s[i]])
                     return false;
-
-                stack.push(s[i]);
-                continue;
+                else
+                    stack.push(s[i]);
             }
-
-            map[stack.top()] == s[i] ? stack.pop() : stack.push(s[i]);
         }
 
         return stack.empty();
