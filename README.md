@@ -11,6 +11,7 @@ ID|Problem|URI
 20|Valid Parentheses|[Solution](https://github.com/mezdelex/LeetCode/blob/main/C%2B%2B/20.%20Valid%20Parentheses/solution.cpp)
 21|Merge Two Sorted Lists|[Solution](https://github.com/mezdelex/LeetCode/blob/main/C%2B%2B/21.%20Merge%20Two%20Sorted%20Lists/solution.cpp)
 26|Remove Duplicates from Sorted Array|[Solution](https://github.com/mezdelex/LeetCode/blob/main/C%2B%2B/26.%20Remove%20Duplicates%20from%20Sorted%20Array/solution.cpp)
-27|Remove Element|[Solution](https://github.com/mezdelex/LeetCode/blob/main/C%2B%2B/26.%20Remove%20Element/solution.cpp)
+27|Remove Element|[Solution](https://github.com/mezdelex/LeetCode/blob/main/C%2B%2B/27.%20Remove%20Element/solution.cpp)
+28|Implement strStr()|[Solution](https://github.com/mezdelex/LeetCode/blob/main/C%2B%2B/28.%20Implement%20strStr()/solution.cpp)
 
 
