@@ -1,5 +1,5 @@
 # LeetCode
-LeetCode problem solving to improve my C++ expertise while learning some algorithms.
+LeetCode problem solving to improve my programming expertise while learning some algorithms.
 
 ID|Problem|C++|
 -:|:-:|:-
