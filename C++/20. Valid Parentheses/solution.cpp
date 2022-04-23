@@ -20,19 +20,12 @@ public:
         };
 
         for (int i = 0; i < s.size(); ++i)
-        {
             if (!stack.empty() && map[stack.top()] == s[i])
-            {
                 stack.pop();
-            }
+            else if (!map[s[i]])
+                return false;
             else
-            {
-                if (!map[s[i]])
-                    return false;
-                else
-                    stack.push(s[i]);
-            }
-        }
+                stack.push(s[i]);
 
         return stack.empty();
     }
