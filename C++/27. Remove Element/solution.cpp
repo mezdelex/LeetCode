@@ -1,5 +1,6 @@
 #include <vector>
 #include <iostream>
+#include <tuple>
 
 using namespace std;
 
@@ -12,17 +13,10 @@ public:
         int j = nums.size() - 1;
 
         while (i <= j)
-        {
             if (nums[i] == val)
-            {
-                nums[i] = nums[j];
-                --j;
-            }
+                nums[i] = nums[j--];
             else
-            {
                 ++i;
-            }
-        }
 
         return i;
     }
@@ -56,9 +50,7 @@ public:
                     cout << "Test" << i << ": OK" << endl;
             }
             else
-            {
                 cout << "Test" << i << ": Failed" << endl;
-            }
         }
     }
 };
