@@ -1,4 +1,6 @@
 #include <iostream>
+#include <vector>
+#include <tuple>
 
 using namespace std;
 
@@ -26,17 +28,15 @@ public:
 
     void runTests()
     {
-        int testOne = 12344321;
-        bool solutionOne = true;
-        cout << (isPalindrome(testOne) == solutionOne ? "TestOne: OK" : "TestOne: Failed") << endl;
+        vector<tuple<int, bool>> tests{
+            {12344321, true},
+            {-1221, false},
+            {0, true}};
 
-        int testTwo = -1221;
-        bool solutionTwo = false;
-        cout << (isPalindrome(testTwo) == solutionTwo ? "TestTwo: OK" : "TestTwo: Failed") << endl;
-
-        int TestThree = 0;
-        bool solutionThree = true;
-        cout << (isPalindrome(TestThree) == solutionThree ? "TestThree: OK" : "TestThree: Failed") << endl;
+        for (int i = 0; i < tests.size(); ++i)
+            isPalindrome(get<0>(tests[i]) == get<1>(tests[i]))
+                ? cout << "Test" << i << ": OK" << endl
+                : cout << "Test" << i << ": Failed" << endl;
     }
 };
 

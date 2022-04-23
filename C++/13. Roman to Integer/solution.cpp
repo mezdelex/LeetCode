@@ -1,6 +1,8 @@
 #include <string>
 #include <iostream>
-#include <queue>
+#include <stack>
+#include <vector>
+#include <tuple>
 
 using namespace std;
 
@@ -30,89 +32,73 @@ public:
         }
     }
 
-    void sumValues(queue<char> &queue, int &sum)
+    void sumValues(stack<char> &stack, int &sum)
     {
-        while (queue.size() != 0)
+        while (stack.size() != 0)
         {
-            sum += fromRomanValue(queue.back());
-            queue.pop();
+            sum += fromRomanValue(stack.top());
+            stack.pop();
         }
     }
 
     int romanToInt(string s)
     {
         int sum = 0;
-        queue<char> queue;
+        stack<char> stack;
 
         for (int i = 0; i < s.size(); ++i)
         {
-            if (queue.empty() || s[i] == queue.back() && queue.size() < 4)
+            if (stack.empty() || s[i] == stack.top() && stack.size() < 4)
             {
-                queue.push(s[i]);
+                stack.push(s[i]);
             }
             else
             {
-                if (queue.size() > 1)
+                if (stack.size() > 1)
                 {
-                    sumValues(queue, sum);
-                    queue.push(s[i]);
+                    sumValues(stack, sum);
+                    stack.push(s[i]);
                 }
                 else
                 {
-                    if (fromRomanValue(s[i]) > fromRomanValue(queue.back()))
+                    if (fromRomanValue(s[i]) > fromRomanValue(stack.top()))
                     {
-                        sum += (fromRomanValue(s[i]) - fromRomanValue(queue.back()));
-                        queue.pop();
+                        sum += (fromRomanValue(s[i]) - fromRomanValue(stack.top()));
+                        stack.pop();
                     }
                     else
                     {
-                        sum += fromRomanValue(queue.back());
-                        queue.pop();
-                        queue.push(s[i]);
+                        sum += fromRomanValue(stack.top());
+                        stack.pop();
+                        stack.push(s[i]);
                     }
                 }
             }
         }
 
-        if (!queue.empty())
-            sumValues(queue, sum);
+        if (!stack.empty())
+            sumValues(stack, sum);
 
         return sum;
     }
 
     void runTests()
     {
-        string testOne = "IX";
-        int expectedOne = 9;
-        cout << (romanToInt(testOne) == expectedOne ? "TestOne: OK" : "TestOne: Failed") << endl;
+        vector<tuple<string, int>> tests{
+            {"IX", 9},
+            {"CCIX", 209},
+            {"CCCIX", 309},
+            {"III", 3},
+            {"LVIII", 58},
+            {"MCMXCIV", 1994},
+            {"DCXXI", 621}};
 
-        string testTwo = "CCIX";
-        int expectedTwo = 209;
-        cout << (romanToInt(testTwo) == expectedTwo ? "TestTwo: OK" : "TestTwo: Failed") << endl;
-
-        string testThree = "CCCIX";
-        int expectedThree = 309;
-        cout << (romanToInt(testThree) == expectedThree ? "TestThree: OK" : "TestThree: Failed") << endl;
-
-        string testFour = "CCCXCIV";
-        int expectedFour = 394;
-        cout << (romanToInt(testFour) == expectedFour ? "TestFour: OK" : "TestFour: Failed") << endl;
-
-        string testFive = "III";
-        int expectedFive = 3;
-        cout << (romanToInt(testFive) == expectedFive ? "TestFive: OK" : "TestFive: Failed") << endl;
-
-        string testSix = "LVIII";
-        int expectedSix = 58;
-        cout << (romanToInt(testSix) == expectedSix ? "TestSix: OK" : "TestSix: Failed") << endl;
-
-        string testSeven = "MCMXCIV";
-        int expectedSeven = 1994;
-        cout << (romanToInt(testSeven) == expectedSeven ? "TestSeven: OK" : "TestSeven: Failed") << endl;
-
-        string testEight = "DCXXI";
-        int expectedEight = 621;
-        cout << (romanToInt(testEight) == expectedEight ? "TestEight: OK" : "TestEight: Failed") << endl;
+        for (int i = 0; i < tests.size(); ++i)
+        {
+            romanToInt(get<0>(tests[i])) == get<1>(tests[i])
+                ? cout << "Test" << i << ": OK" << endl
+                : cout << "Test" << i << ": Failed" << endl;
+        }
     }
 };
 
