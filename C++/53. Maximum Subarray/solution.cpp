@@ -7,7 +7,7 @@ using namespace std;
 class Solution
 {
 public:
-    int maxSubArrayDP(vector<int> &nums)
+    int maxSubArray(vector<int> &nums)
     {
         int max = INT_MIN;
         int sum = 0;
@@ -52,13 +52,13 @@ public:
 
         for (int i = 0; i < tests.size(); ++i)
         {
-            maxSubArrayDP(get<0>(tests[i])) == get<1>(tests[i])
-                ? cout << "Tests" << i << ": OK using DP" << endl
-                : cout << "Tests" << i << ": Failed using DP" << endl;
+            maxSubArray(get<0>(tests[i])) == get<1>(tests[i])
+                ? cout << "Tests" << i << ": OK" << endl
+                : cout << "Tests" << i << ": Failed" << endl;
 
             maxSubArrayKadane(get<0>(tests[i])) == get<1>(tests[i])
-                ? cout << "Tests" << i << ": OK using Kadane" << endl
-                : cout << "Tests" << i << ": Failed using Kadane" << endl;
+                ? cout << "Tests" << i << ": OK using Kadane's algorithm" << endl
+                : cout << "Tests" << i << ": Failed using Kadane's algorithm" << endl;
         }
     }
 };
