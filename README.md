@@ -15,6 +15,6 @@ ID|Problem|Algorithm|C++
 28|Implement strStr()|-|[Solution](https://github.com/mezdelex/LeetCode/blob/main/C%2B%2B/28.%20Implement%20strStr()/solution.cpp)
 35|Search Insert Position|-|[Solution](https://github.com/mezdelex/LeetCode/blob/main/C%2B%2B/35.%20Search%20Insert%20Position/solution.cpp)
 53|Maximum Subarray|[Kadane](https://en.wikipedia.org/wiki/Maximum_subarray_problem)|[Solution](https://github.com/mezdelex/LeetCode/blob/main/C%2B%2B/53.%20Maximum%20Subarray/solution.cpp)
-58|Length of Last Word|-|[Solution](https://github.com/mezdelex/LeetCode/blob/main/C%2B%2B/53.%20Length%20of%20Last%20Word/solution.cpp)
+58|Length of Last Word|-|[Solution](https://github.com/mezdelex/LeetCode/blob/main/C%2B%2B/58.%20Length%20of%20Last%20Word/solution.cpp)
 
 
