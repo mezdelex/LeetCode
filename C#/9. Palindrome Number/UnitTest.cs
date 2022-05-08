@@ -2,7 +2,7 @@ using Xunit;
 
 namespace _9._Palindrome_Number;
 
-public class UnitTest
+public record UnitTest
 {
     [Theory]
     [InlineData(12344321, true)]
