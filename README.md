@@ -5,7 +5,7 @@ LeetCode problem solving to improve my programming expertise while learning some
 |:-:|:-:|:-:|:-:|:-:|
 897|Increasing Order Search Tree|-|[Solution](https://github.com/mezdelex/LeetCode/blob/main/C%2B%2B/897.%20Increasing%20Order%20Search%20Tree/solution.cpp)|-
 1|Two Sum|-|[Solution](https://github.com/mezdelex/LeetCode/blob/main/C%2B%2B/1.%20Two%20Sum/solution.cpp)|[Solution](https://github.com/mezdelex/LeetCode/blob/main/C%23/1.%20Two%20Sum/Solution.cs)/[xUnit](https://github.com/mezdelex/LeetCode/blob/main/C%23/1.%20Two%20Sum/UnitTest.cs)
-9|Palindrome Number|-|[Solution](https://github.com/mezdelex/LeetCode/blob/main/C%2B%2B/9.%20Palindrome%20Number/solution.cpp)|-
+9|Palindrome Number|-|[Solution](https://github.com/mezdelex/LeetCode/blob/main/C%2B%2B/9.%20Palindrome%20Number/solution.cpp)|[Solution](https://github.com/mezdelex/LeetCode/blob/main/C%23/9.%20Palindrome%20Number/Solution.cpp)/[xUnit]([Solution](https://github.com/mezdelex/LeetCode/blob/main/C%23/9.%20Palindrome%20Number/UnitTest.cpp))
 13|Roman to Integer|-|[Solution](https://github.com/mezdelex/LeetCode/blob/main/C%2B%2B/13.%20Roman%20to%20Integer/solution.cpp)|-
 14|Longest Common Prefix|-|[Solution](https://github.com/mezdelex/LeetCode/blob/main/C%2B%2B/14.%20Longest%20Common%20Prefix/solution.cpp)|-
 20|Valid Parentheses|-|[Solution](https://github.com/mezdelex/LeetCode/blob/main/C%2B%2B/20.%20Valid%20Parentheses/solution.cpp)|-
