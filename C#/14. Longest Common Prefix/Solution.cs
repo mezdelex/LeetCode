@@ -1,4 +1,4 @@
-﻿public class Solution
+﻿public record struct Solution
 {
     public string LongestCommonPrefix(string[] strs)
     {
