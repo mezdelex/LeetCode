@@ -18,5 +18,6 @@ LeetCode problem solving to improve my programming expertise while learning some
 58|Length of Last Word|-|[Solution](https://github.com/mezdelex/LeetCode/blob/main/C%2B%2B/58.%20Length%20of%20Last%20Word/solution.cpp)|-
 66|Plus One|-|[Solution](https://github.com/mezdelex/LeetCode/blob/main/C%2B%2B/66.%20Plus%20One/solution.cpp)|-
 191|Number of 1 Bits|-|-|[Solution](https://github.com/mezdelex/LeetCode/blob/main/C%23/191.%20Number%20of%201%20Bits/Solution.cs)/[xUnit](https://github.com/mezdelex/LeetCode/blob/main/C%23/191.%20Number%20of%201%20Bits/UnitTest.cs)
+1342|Number of Steps to Reduce a Number to Zero|-|-|[Solution](https://github.com/mezdelex/LeetCode/blob/main/C%23/1342.%20Number%20of%20Steps%20to%20Reduce%20a%20Number%20to%20Zero/Solution.cs)/[xUnit](https://github.com/mezdelex/LeetCode/blob/main/C%23/1342.%20Number%20of%20Steps%20to%20Reduce%20a%20Number%20to%20Zero/UnitTest.cs)
 
 
