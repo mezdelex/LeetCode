@@ -17,5 +17,6 @@ LeetCode problem solving to improve my programming expertise while learning some
 53|Maximum Subarray|[Kadane](https://en.wikipedia.org/wiki/Maximum_subarray_problem)|[Solution](https://github.com/mezdelex/LeetCode/blob/main/C%2B%2B/53.%20Maximum%20Subarray/solution.cpp)|-
 58|Length of Last Word|-|[Solution](https://github.com/mezdelex/LeetCode/blob/main/C%2B%2B/58.%20Length%20of%20Last%20Word/solution.cpp)|-
 66|Plus One|-|[Solution](https://github.com/mezdelex/LeetCode/blob/main/C%2B%2B/66.%20Plus%20One/solution.cpp)|-
+191|Number of 1 Bits|-|-|[Solution](https://github.com/mezdelex/LeetCode/blob/main/C%23/191.%20Number%20of%201%20Bits/Solution.cs)/[xUnit](https://github.com/mezdelex/LeetCode/blob/main/C%23/191.%20Number%20of%201%20Bits/UnitTest.cs)
 
 
