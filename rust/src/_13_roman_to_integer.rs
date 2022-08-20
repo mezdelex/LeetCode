@@ -17,20 +17,18 @@ impl Solution {
         let mut sum = 0;
         let mut last = 0;
 
-        for c in s.chars() {
-            match map.get(&c) {
-                Some(&value) => {
-                    if value > last {
-                        sum += value - last - last;
-                    } else {
-                        sum += value;
-                    }
-
-                    last = value;
+        s.chars().enumerate().for_each(|(_, c)| match map.get(&c) {
+            Some(&value) => {
+                if value > last {
+                    sum += value - last - last;
+                } else {
+                    sum += value;
                 }
-                _ => {} // None -> Default if no matches found
+
+                last = value;
             }
-        }
+            _ => {}
+        });
 
         sum
     }
