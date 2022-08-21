@@ -17,7 +17,7 @@ impl Solution {
         let mut sum = 0;
         let mut last = 0;
 
-        s.chars().enumerate().for_each(|(_, c)| match map.get(&c) {
+        s.chars().for_each(|c| match map.get(&c) {
             Some(&value) => {
                 if value > last {
                     sum += value - last - last;
