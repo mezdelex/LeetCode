@@ -14,23 +14,23 @@ impl Solution {
 #[test]
 fn test1() {
     assert_eq!(
-        Solution::add_binary("1010".to_string(), "1011".to_string()),
-        "10101".to_string()
+        Solution::add_binary("1010".to_owned(), "1011".to_owned()),
+        "10101".to_owned()
     );
 }
 
 #[test]
 fn test2() {
     assert_eq!(
-        Solution::add_binary("1000".to_string(), "1011".to_string()),
-        "10011".to_string()
+        Solution::add_binary("1000".to_owned(), "1011".to_owned()),
+        "10011".to_owned()
     );
 }
 
 #[test]
 fn test3() {
     assert_eq!(
-        Solution::add_binary("000".to_string(), "111".to_string()),
-        "111".to_string()
+        Solution::add_binary("000".to_owned(), "111".to_owned()),
+        "111".to_owned()
     );
 }
