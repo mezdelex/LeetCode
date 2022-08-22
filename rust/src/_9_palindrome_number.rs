@@ -1,6 +1,6 @@
-pub struct Solution;
+pub struct Solution1;
 
-impl Solution {
+impl Solution1 {
     pub fn is_palindrome(x: i32) -> bool {
         if x < 0 {
             return false;
@@ -36,21 +36,21 @@ impl Solution2 {
 fn test1() {
     let x = -1212;
     let expected = false;
-    assert_eq!(Solution::is_palindrome(x), expected);
+    assert_eq!(Solution1::is_palindrome(x), expected);
 }
 
 #[test]
 fn test2() {
     let x = 12321;
     let expected = true;
-    assert_eq!(Solution::is_palindrome(x), expected);
+    assert_eq!(Solution1::is_palindrome(x), expected);
 }
 
 #[test]
 fn test3() {
     let x = 112233;
     let expected = false;
-    assert_eq!(Solution::is_palindrome(x), expected);
+    assert_eq!(Solution1::is_palindrome(x), expected);
 }
 
 #[test]
