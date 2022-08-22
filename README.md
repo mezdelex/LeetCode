@@ -2,8 +2,8 @@
 
 LeetCode problem solving to improve my programming expertise while learning some algorithms.
 
-|ID|Problem|Algorithm|C++|C#|Rust
--:|:-:|:-:|:-:|:-:|:-
+ID|Problem|Algorithm|C++|C#|Rust
+|:-:|:-:|:-:|:-:|:-:|:-:|
 1|Two Sum|-|[Solution](https://github.com/mezdelex/LeetCode/blob/main/cpp/1.%20Two%20Sum/solution.cpp)|[Solution](https://github.com/mezdelex/LeetCode/blob/main/csharp/1.%20Two%20Sum/Solution.cs)/[xUnit](https://github.com/mezdelex/LeetCode/blob/main/csharp/1.%20Two%20Sum/UnitTest.cs)|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/rust/src/_1_two_sum.rs)
 9|Palindrome Number|-|[Solution](https://github.com/mezdelex/LeetCode/blob/main/cpp/9.%20Palindrome%20Number/solution.cpp)|[Solution](https://github.com/mezdelex/LeetCode/blob/main/csharp/9.%20Palindrome%20Number/Solution.cs)/[xUnit](https://github.com/mezdelex/LeetCode/blob/main/csharp/9.%20Palindrome%20Number/UnitTest.cs)|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/rust/src/_9_palindrome_number.rs)
 13|Roman to Integer|-|[Solution](https://github.com/mezdelex/LeetCode/blob/main/cpp/13.%20Roman%20to%20Integer/solution.cpp)|[Solution](https://github.com/mezdelex/LeetCode/blob/main/csharp/13.%20Roman%20to%20Integer/Solution.cs)/[xUnit](https://github.com/mezdelex/LeetCode/blob/main/csharp/13.%20Roman%20to%20Integer/UnitTest.cs)|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/rust/src/_13_roman_to_integer.rs)
