@@ -7,10 +7,11 @@ impl Solution {
         let mut hash_map: HashMap<i32, i32> = HashMap::new();
 
         for (i, &num) in nums.iter().enumerate() {
-            if let Some(&j) = hash_map.get(&(target - num)) {
-                return vec![j, i as i32];
-            } else {
-                hash_map.insert(num, i as i32);
+            match hash_map.get(&(target - num)) {
+                Some(&j) => return vec![j, i as i32],
+                _ => {
+                    hash_map.insert(num, i as i32);
+                }
             }
         }
 
