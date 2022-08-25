@@ -19,6 +19,6 @@ ID|Problem|Algorithm|C++|C#|Rust
 66|Plus One|-|[Solution](https://github.com/mezdelex/LeetCode/blob/main/cpp/66.%20Plus%20One/solution.cpp)|-|-
 67|Add Binary|-|-|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/rust/src/_67_add_binary.rs)
 191|Number of 1 Bits|-|-|[Solution](https://github.com/mezdelex/LeetCode/blob/main/csharp/191.%20Number%20of%201%20Bits/Solution.cs)/[xUnit](https://github.com/mezdelex/LeetCode/blob/main/csharp/191.%20Number%20of%201%20Bits/UnitTest.cs)|-
-383|Ransom Note|-|-|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/rust/src/_383_ransom_notes.rs)
+383|Ransom Note|-|-|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/rust/src/_383_ransom_note.rs)
 897|Increasing Order Search Tree|-|[Solution](https://github.com/mezdelex/LeetCode/blob/main/cpp/897.%20Increasing%20Order%20Search%20Tree/solution.cpp)|-|-
 1342|Number of Steps to Reduce a Number to Zero|-|-|[Solution](https://github.com/mezdelex/LeetCode/blob/main/csharp/1342.%20Number%20of%20Steps%20to%20Reduce%20a%20Number%20to%20Zero/Solution.cs)/[xUnit](https://github.com/mezdelex/LeetCode/blob/main/csharp/1342.%20Number%20of%20Steps%20to%20Reduce%20a%20Number%20to%20Zero/UnitTest.cs)|-
