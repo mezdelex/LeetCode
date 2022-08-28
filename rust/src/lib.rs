@@ -8,3 +8,4 @@ pub mod _9_palindrome_number;
 pub mod _26_remove_duplicates_from_sorted_array;
 pub mod _383_ransom_note;
 pub mod _869_reordered_power_of_2;
+pub mod _1329_sort_the_matrix_diagonally;

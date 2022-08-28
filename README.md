@@ -22,4 +22,5 @@ ID|Problem|Algorithm|C++|C#|Rust
 383|Ransom Note|-|-|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/rust/src/_383_ransom_note.rs)
 869|Reordered Power of 2|-|-|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/rust/src/_869_reordered_power_of_2.rs)
 897|Increasing Order Search Tree|-|[Solution](https://github.com/mezdelex/LeetCode/blob/main/cpp/897.%20Increasing%20Order%20Search%20Tree/solution.cpp)|-|-
+1329|Sort the Matrix Diagonally|-|-|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/rust/src/_1329_sort_the_matrix_diagonally.rs)
 1342|Number of Steps to Reduce a Number to Zero|-|-|[Solution](https://github.com/mezdelex/LeetCode/blob/main/csharp/1342.%20Number%20of%20Steps%20to%20Reduce%20a%20Number%20to%20Zero/Solution.cs)/[xUnit](https://github.com/mezdelex/LeetCode/blob/main/csharp/1342.%20Number%20of%20Steps%20to%20Reduce%20a%20Number%20to%20Zero/UnitTest.cs)|-
