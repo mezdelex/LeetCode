@@ -3,6 +3,7 @@
 #include <vector>
 #include <sstream>
 #include <tuple>
+#include <cassert>
 
 using namespace std;
 
@@ -32,11 +33,7 @@ public:
             {{"a"}, "a"}};
 
         for (int i = 0; i < tests.size(); ++i)
-        {
-            longestCommonPrefix(get<0>(tests[i])) == get<1>(tests[i])
-                ? cout << "Test" << i << ": OK" << endl
-                : cout << "Test" << i << ": Failed" << endl;
-        }
+            assert(longestCommonPrefix(get<0>(tests[i])) == get<1>(tests[i]));
     }
 };
 

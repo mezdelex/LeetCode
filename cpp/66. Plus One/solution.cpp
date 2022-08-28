@@ -1,6 +1,7 @@
 #include <vector>
 #include <iostream>
 #include <tuple>
+#include <cassert>
 
 using namespace std;
 
@@ -41,11 +42,7 @@ public:
             {{9}, {1, 0}}};
 
         for (int i = 0; i < tests.size(); ++i)
-        {
-            plusOne(get<0>(tests[i])) == get<1>(tests[i])
-                ? cout << "Test" << i << ": OK" << endl
-                : cout << "Test" << i << ": Failed" << endl;
-        }
+            assert(plusOne(get<0>(tests[i])) == get<1>(tests[i]));
     }
 };
 

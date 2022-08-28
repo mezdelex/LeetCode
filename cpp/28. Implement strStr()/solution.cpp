@@ -2,6 +2,7 @@
 #include <vector>
 #include <tuple>
 #include <iostream>
+#include <cassert>
 
 using namespace std;
 
@@ -25,9 +26,7 @@ public:
             {"Something", "me", 2}};
 
         for (int i = 0; i < tests.size(); ++i)
-            strStr(get<0>(tests[i]), get<1>(tests[i])) == get<2>(tests[i])
-                ? cout << "Test" << i << ": OK" << endl
-                : cout << "Test" << i << ": Failed" << endl;
+            assert(strStr(get<0>(tests[i]), get<1>(tests[i])) == get<2>(tests[i]));
     }
 };
 

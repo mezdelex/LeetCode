@@ -1,6 +1,7 @@
 #include <vector>
 #include <tuple>
 #include <iostream>
+#include <cassert>
 
 using namespace std;
 
@@ -36,9 +37,7 @@ public:
             {{1}, 1, 0}};
 
         for (int i = 0; i < tests.size(); ++i)
-            searchInsert(get<0>(tests[i]), get<1>(tests[i])) == get<2>(tests[i])
-                ? cout << "Test" << i << ": OK" << endl
-                : cout << "Test" << i << ": Failed" << endl;
+            assert(searchInsert(get<0>(tests[i]), get<1>(tests[i])) == get<2>(tests[i]));
     }
 };
 

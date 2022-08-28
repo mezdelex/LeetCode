@@ -3,6 +3,7 @@
 #include <stack>
 #include <vector>
 #include <tuple>
+#include <cassert>
 
 using namespace std;
 
@@ -94,11 +95,7 @@ public:
             {"DCXXI", 621}};
 
         for (int i = 0; i < tests.size(); ++i)
-        {
-            romanToInt(get<0>(tests[i])) == get<1>(tests[i])
-                ? cout << "Test" << i << ": OK" << endl
-                : cout << "Test" << i << ": Failed" << endl;
-        }
+            assert(romanToInt(get<0>(tests[i])) == get<1>(tests[i]));
     }
 };
 

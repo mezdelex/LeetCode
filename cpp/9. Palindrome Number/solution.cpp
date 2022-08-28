@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <tuple>
+#include <cassert>
 
 using namespace std;
 
@@ -34,9 +35,7 @@ public:
             {0, true}};
 
         for (int i = 0; i < tests.size(); ++i)
-            isPalindrome(get<0>(tests[i]) == get<1>(tests[i]))
-                ? cout << "Test" << i << ": OK" << endl
-                : cout << "Test" << i << ": Failed" << endl;
+            assert(isPalindrome(get<0>(tests[i]) == get<1>(tests[i])));
     }
 };
 

@@ -1,6 +1,7 @@
 #include <iostream>
 #include <tuple>
 #include <vector>
+#include <cassert>
 
 using namespace std;
 
@@ -61,23 +62,10 @@ public:
 
             while (temp && get<2>(tests[i]))
             {
-                if (temp->val != get<2>(tests[i])->val)
-                {
-                    cout << "Test" << i << ": Failed" << endl;
-                    break;
-                }
-
+                assert(temp->val == get<2>(tests[i])->val);
                 temp = temp->next;
                 get<2>(tests[i]) = get<2>(tests[i])->next;
             }
-
-            if (!temp && !get<2>(tests[i]))
-                cout << "Test" << i << ": OK" << endl;
-
-            delete get<0>(tests[i]);
-            delete get<1>(tests[i]);
-            delete get<2>(tests[i]);
-            delete temp;
         }
     }
 };

@@ -2,6 +2,7 @@
 #include <string>
 #include <vector>
 #include <tuple>
+#include <cassert>
 
 using namespace std;
 
@@ -32,11 +33,7 @@ public:
             {" lul   ", 3}};
 
         for (int i = 0; i < tests.size(); ++i)
-        {
-            lengthOfLastWord(get<0>(tests[i])) == get<1>(tests[i])
-                ? cout << "Test" << i << ": OK" << endl
-                : cout << "Test" << i << ": Failed" << endl;
-        }
+            assert(lengthOfLastWord(get<0>(tests[i])) == get<1>(tests[i]));
     }
 };
 

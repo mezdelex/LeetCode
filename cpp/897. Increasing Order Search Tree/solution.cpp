@@ -1,6 +1,7 @@
 #include <stack>
 #include <iostream>
 #include <vector>
+#include <cassert>
 
 using namespace std;
 
@@ -60,18 +61,13 @@ public:
 
             while (testRoot)
             {
-                if (testRoot->val < temp)
-                    break;
-
-                cout << testRoot->val << "\n";
+                assert(testRoot->val > temp);
 
                 temp = testRoot->val;
                 testRoot = testRoot->right;
             }
 
-            testRoot ? cout << "Test" << i << ": Failed" << endl : cout << "Test" << i << ": OK" << endl;
-
-            delete testRoot;
+            assert(testRoot == nullptr);
         }
     }
 };
