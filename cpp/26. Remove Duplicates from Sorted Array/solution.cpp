@@ -1,6 +1,7 @@
 #include <vector>
 #include <tuple>
 #include <iostream>
+#include <cassert>
 
 using namespace std;
 
@@ -31,21 +32,18 @@ public:
 
         for (int i = 0; i < tests.size(); ++i)
         {
-            if (removeDuplicates(get<0>(tests[i])) == get<2>(tests[i]))
-            {
-                int j = 0;
-                for (; j < get<2>(tests[i]) - 1; ++j)
-                {
-                    if (get<1>(tests[i])[j] >= get<1>(tests[i])[j + 1])
-                    {
-                        break;
-                    }
-                }
+            assert(removeDuplicates(get<0>(tests[i])) == get<2>(tests[i]));
 
-                j == get<2>(tests[i]) - 1
-                    ? cout << "Test" << i << ": OK" << endl
-                    : cout << "Test" << i << ": Failed" << endl;
+            int j = 0;
+            for (; j < get<2>(tests[i]) - 1; ++j)
+            {
+                if (get<1>(tests[i])[j] >= get<1>(tests[i])[j + 1])
+                {
+                    break;
+                }
             }
+
+            assert(j == get<2>(tests[i]) - 1);
         }
     }
 };
