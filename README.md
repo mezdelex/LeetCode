@@ -12,7 +12,7 @@ ID|Problem|Algorithm|C++|C#|Rust
 21|Merge Two Sorted Lists|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/cpp/src/0021_MergeTwoSortedLists.cpp)|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/rust/src/_0021_merge_two_sorted_lists.rs)
 26|Remove Duplicates from Sorted Array|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/cpp/src/0026_RemoveDuplicatesFromSortedArray.cpp)|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/rust/src/_0026_remove_duplicates_from_sorted_array.rs)
 27|Remove Element|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/cpp/src/0027_RemoveElement.cpp)|-|-
-28|Implement strStr()|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/cpp/src/0028_ImplementstrStr.cpp)|-|-
+28|Implement strStr()|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/cpp/src/0028_Implement_strStr.cpp)|-|-
 35|Search Insert Position|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/cpp/src/0035_SearchInsertPosition.cpp)|-|-
 53|Maximum Subarray|[Kadane](https://en.wikipedia.org/wiki/Maximum_subarray_problem)|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/cpp/src/0053_MaximumSubarray.cpp)|-|-
 58|Length of Last Word|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/cpp/src/0058_LengthOfLastWord.cpp)|-|-
