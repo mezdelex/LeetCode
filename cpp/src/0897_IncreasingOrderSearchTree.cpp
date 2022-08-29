@@ -2,8 +2,6 @@
 #include <iostream>
 #include <vector>
 #include <cassert>
-#include <climits>
-#define INT_MIN (-2147483647)
 
 using namespace std;
 
@@ -58,7 +56,7 @@ public:
 
         for (int i = 0; i < tests.size(); ++i)
         {
-            int temp = INT_MIN;
+            int temp = 0;
             TreeNode *testRoot = increasingBST(tests[i]);
 
             while (testRoot)
