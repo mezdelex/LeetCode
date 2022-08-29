@@ -11,7 +11,7 @@ ID|Problem|Algorithm|C++|C#|Rust
 20|Valid Parentheses|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/cpp/src/0020_ValidParentheses.cpp)|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/csharp/src/0020_ValidParentheses.cs)|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/rust/src/_0020_valid_parentheses.rs)
 21|Merge Two Sorted Lists|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/cpp/src/0021_MergeTwoSortedLists.cpp)|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/rust/src/_0021_merge_two_sorted_lists.rs)
 26|Remove Duplicates from Sorted Array|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/cpp/src/0026_RemoveDuplicatesFromSortedArray.cpp)|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/rust/src/_0026_remove_duplicates_from_sorted_array.rs)
-27|Remove Element|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/cpp/src/0027_RemoveElement.cpp)|-|-
+27|Remove Element|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/cpp/src/0027_RemoveElement.cpp)|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/rust/src/_0027_remove_element.rs)
 28|Implement strStr()|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/cpp/src/0028_Implement_strStr.cpp)|-|-
 35|Search Insert Position|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/cpp/src/0035_SearchInsertPosition.cpp)|-|-
 53|Maximum Subarray|[Kadane](https://en.wikipedia.org/wiki/Maximum_subarray_problem)|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/cpp/src/0053_MaximumSubarray.cpp)|-|-
