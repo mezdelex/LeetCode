@@ -8,7 +8,7 @@
 
 using namespace std;
 
-class Solution
+class ValidParenthesesSolution
 {
 public:
     bool isValid(string s)
@@ -44,10 +44,3 @@ public:
             assert(isValid(get<0>(tests[i])) == get<1>(tests[i]));
     }
 };
-
-int main(int argc, char const *argv[])
-{
-    Solution solution;
-    solution.runTests();
-    return 0;
-}

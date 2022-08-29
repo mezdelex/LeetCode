@@ -1,0 +1,15 @@
+name: C++ CI
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  cpp_tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run tests
+        run: g++ ./cpp/src/*.cpp -o ./cpp/src/tests.exe && ./cpp/src/tests.exe

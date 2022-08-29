@@ -15,7 +15,7 @@ struct TreeNode
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
 
-class Solution
+class IncreasingOrderSearchTreeSolution
 {
 public:
     TreeNode *increasingBST(TreeNode *root)
@@ -70,11 +70,4 @@ public:
             assert(testRoot == nullptr);
         }
     }
-};
-
-int main(int argc, char const *argv[])
-{
-    Solution solution;
-    solution.runTests();
-    return 0;
 };

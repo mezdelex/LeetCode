@@ -5,7 +5,7 @@
 
 using namespace std;
 
-class Solution
+class PalindromeNumberSolution
 {
 public:
     bool isPalindrome(int x)
@@ -38,10 +38,3 @@ public:
             assert(isPalindrome(get<0>(tests[i]) == get<1>(tests[i])));
     }
 };
-
-int main(int argc, char const *argv[])
-{
-    Solution solution;
-    solution.runTests();
-    return 0;
-}

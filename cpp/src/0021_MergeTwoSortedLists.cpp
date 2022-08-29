@@ -14,7 +14,7 @@ struct ListNode
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
 
-class Solution
+class MergeTwoSortedListsSolution
 {
 public:
     ListNode *mergeTwoLists(ListNode *list1, ListNode *list2)
@@ -69,10 +69,3 @@ public:
         }
     }
 };
-
-int main(int argc, char const *argv[])
-{
-    Solution solution;
-    solution.runTests();
-    return 0;
-}

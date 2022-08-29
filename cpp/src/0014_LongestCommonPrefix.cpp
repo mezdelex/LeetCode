@@ -7,7 +7,7 @@
 
 using namespace std;
 
-class Solution
+class LongestCommonPrefixSolution
 {
 public:
     string longestCommonPrefix(vector<string> &strs)
@@ -36,10 +36,3 @@ public:
             assert(longestCommonPrefix(get<0>(tests[i])) == get<1>(tests[i]));
     }
 };
-
-int main(int argc, char const *argv[])
-{
-    Solution solution;
-    solution.runTests();
-    return 0;
-}

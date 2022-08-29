@@ -7,7 +7,7 @@
 
 using namespace std;
 
-class Solution
+class RomanToIntegerSolution
 {
 public:
     int fromRomanValue(char c)
@@ -98,10 +98,3 @@ public:
             assert(romanToInt(get<0>(tests[i])) == get<1>(tests[i]));
     }
 };
-
-int main(int argc, char const *argv[])
-{
-    Solution solution;
-    solution.runTests();
-    return 0;
-}

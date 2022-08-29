@@ -5,7 +5,7 @@
 
 using namespace std;
 
-class Solution
+class RemoveDuplicatesFromSortedArraySolution
 {
 public:
     int removeDuplicates(vector<int> &nums)
@@ -47,10 +47,3 @@ public:
         }
     }
 };
-
-int main(int argc, char const *argv[])
-{
-    Solution solution;
-    solution.runTests();
-    return 0;
-}

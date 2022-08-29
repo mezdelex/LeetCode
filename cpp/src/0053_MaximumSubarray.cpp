@@ -5,7 +5,7 @@
 
 using namespace std;
 
-class Solution
+class MaximumSubarraySolution
 {
 public:
     int maxSubArray(vector<int> &nums)
@@ -58,10 +58,3 @@ public:
         }
     }
 };
-
-int main(int argc, char const *argv[])
-{
-    Solution solution;
-    solution.runTests();
-    return 0;
-}

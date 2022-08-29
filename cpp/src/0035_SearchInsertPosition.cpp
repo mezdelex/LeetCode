@@ -5,7 +5,7 @@
 
 using namespace std;
 
-class Solution
+class SearchInsertPositionSolution
 {
 public:
     int searchInsert(vector<int> &nums, int target)
@@ -40,10 +40,3 @@ public:
             assert(searchInsert(get<0>(tests[i]), get<1>(tests[i])) == get<2>(tests[i]));
     }
 };
-
-int main(int argc, char const *argv[])
-{
-    Solution solution;
-    solution.runTests();
-    return 0;
-}

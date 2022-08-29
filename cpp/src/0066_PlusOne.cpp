@@ -5,7 +5,7 @@
 
 using namespace std;
 
-class Solution
+class PlusOneSolution
 {
 public:
     vector<int> plusOne(vector<int> &digits)
@@ -45,10 +45,3 @@ public:
             assert(plusOne(get<0>(tests[i])) == get<1>(tests[i]));
     }
 };
-
-int main(int argc, char const *argv[])
-{
-    Solution solution;
-    solution.runTests();
-    return 0;
-}

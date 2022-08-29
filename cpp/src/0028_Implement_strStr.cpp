@@ -6,7 +6,7 @@
 
 using namespace std;
 
-class Solution
+class ImplementstrStrSolution
 {
 public:
     int strStr(string haystack, string needle)
@@ -29,10 +29,3 @@ public:
             assert(strStr(get<0>(tests[i]), get<1>(tests[i])) == get<2>(tests[i]));
     }
 };
-
-int main(int argc, char const *argv[])
-{
-    Solution solution;
-    solution.runTests();
-    return 0;
-}

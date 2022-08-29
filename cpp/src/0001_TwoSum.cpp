@@ -6,7 +6,7 @@
 
 using namespace std;
 
-class Solution
+class TwoSumSolution
 {
 public:
     vector<int> twoSum(vector<int> &nums, int target)
@@ -35,10 +35,3 @@ public:
             assert(twoSum(get<0>(tests[i]), get<1>(tests[i])) == get<2>(tests[i]));
     }
 };
-
-int main(int argc, char const *argv[])
-{
-    Solution solution;
-    solution.runTests();
-    return 0;
-}

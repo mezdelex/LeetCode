@@ -5,7 +5,7 @@
 
 using namespace std;
 
-class Solution
+class RemoveElementSolutionSolution
 {
 public:
     int removeElement(vector<int> &nums, int val)
@@ -48,10 +48,3 @@ public:
         }
     }
 };
-
-int main(int argc, char const *argv[])
-{
-    Solution solution;
-    solution.runTests();
-    return 0;
-}
