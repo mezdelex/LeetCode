@@ -10,7 +10,7 @@ class MaximumSubarraySolution
 public:
     int maxSubArray(vector<int> &nums)
     {
-        int max = INT_MIN;
+        int max = 0;
         int sum = 0;
 
         for (int i = 0; i < nums.size(); ++i)
