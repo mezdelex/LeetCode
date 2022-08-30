@@ -10,3 +10,4 @@ pub mod _0383_ransom_note;
 pub mod _0869_reordered_power_of_2;
 pub mod _1329_sort_the_matrix_diagonally;
 pub mod _0027_remove_element;
+pub mod _0048_rotate_image;

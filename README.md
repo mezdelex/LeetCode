@@ -14,6 +14,7 @@ ID|Problem|Algorithm|C++|C#|Rust
 27|Remove Element|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/cpp/src/0027_RemoveElement.cpp)|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/rust/src/_0027_remove_element.rs)
 28|Implement strStr()|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/cpp/src/0028_Implement_strStr.cpp)|-|-
 35|Search Insert Position|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/cpp/src/0035_SearchInsertPosition.cpp)|-|-
+48|Rotate Image|-|-|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/rust/src/_0048_rotate_image.rs)
 53|Maximum Subarray|[Kadane](https://en.wikipedia.org/wiki/Maximum_subarray_problem)|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/cpp/src/0053_MaximumSubarray.cpp)|-|-
 58|Length of Last Word|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/cpp/src/0058_LengthOfLastWord.cpp)|-|-
 66|Plus One|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/cpp/src/0066_PlusOne.cpp)|-|-
