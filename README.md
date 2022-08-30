@@ -13,7 +13,7 @@ ID|Problem|Algorithm|C++|C#|Rust
 26|Remove Duplicates from Sorted Array|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/cpp/src/0026_RemoveDuplicatesFromSortedArray.cpp)|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/rust/src/_0026_remove_duplicates_from_sorted_array.rs)
 27|Remove Element|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/cpp/src/0027_RemoveElement.cpp)|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/rust/src/_0027_remove_element.rs)
 28|Implement strStr()|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/cpp/src/0028_Implement_strStr.cpp)|-|-
-35|Search Insert Position|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/cpp/src/0035_SearchInsertPosition.cpp)|-|-
+35|Search Insert Position|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/cpp/src/0035_SearchInsertPosition.cpp)|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/rust/src/_0035_search_insert_position.rs)
 48|Rotate Image|-|-|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/rust/src/_0048_rotate_image.rs)
 53|Maximum Subarray|[Kadane](https://en.wikipedia.org/wiki/Maximum_subarray_problem)|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/cpp/src/0053_MaximumSubarray.cpp)|-|-
 58|Length of Last Word|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/cpp/src/0058_LengthOfLastWord.cpp)|-|-
