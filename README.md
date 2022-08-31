@@ -19,7 +19,7 @@ ID|Problem|Algorithm|C++|C#|Rust
 58|Length of Last Word|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/cpp/src/0058_LengthOfLastWord.cpp)|-|-
 66|Plus One|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/cpp/src/0066_PlusOne.cpp)|-|-
 67|Add Binary|-|-|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/rust/src/_0067_add_binary.rs)
-70|Climbing Stairs|[Fibonacci](https://en.wikipedia.org/wiki/Fibonacci_number)|-|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/rust/src/_0869_reordered_power_of_2.rs)
+70|Climbing Stairs|[Fibonacci](https://en.wikipedia.org/wiki/Fibonacci_number)|-|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/rust/src/_0070_climbing_stairs.rs)
 191|Number of 1 Bits|-|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/csharp/src/0191_NumberOf1Bits.cs)|-
 383|Ransom Note|-|-|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/rust/src/_0383_ransom_note.rs)
 869|Reordered Power of 2|-|-|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/rust/src/_0869_reordered_power_of_2.rs)
