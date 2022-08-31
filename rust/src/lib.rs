@@ -12,3 +12,4 @@ pub mod _1329_sort_the_matrix_diagonally;
 pub mod _0027_remove_element;
 pub mod _0048_rotate_image;
 pub mod _0035_search_insert_position;
+pub mod _0070_climbing_stairs;
