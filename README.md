@@ -21,6 +21,7 @@ ID|Problem|Algorithm|C++|C#|Rust
 67|Add Binary|-|-|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/rust/src/_0067_add_binary.rs)
 70|Climbing Stairs|[Fibonacci](https://en.wikipedia.org/wiki/Fibonacci_number)|-|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/rust/src/_0070_climbing_stairs.rs)
 104|Maximum Depth of Binary Tree|-|-|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/rust/src/_0104_maximum_depth_of_binary_tree.rs)
+108|Pascal's Triangle|[Pascal's Triangle](https://en.wikipedia.org/wiki/Pascal%27s_triangle)|-|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/rust/src/_0108_pascals_triangle.rs)
 191|Number of 1 Bits|-|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/csharp/src/0191_NumberOf1Bits.cs)|-
 383|Ransom Note|-|-|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/rust/src/_0383_ransom_note.rs)
 869|Reordered Power of 2|-|-|-|[Solution/Tests](https://github.com/mezdelex/LeetCode/blob/main/rust/src/_0869_reordered_power_of_2.rs)

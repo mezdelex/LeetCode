@@ -14,3 +14,4 @@ pub mod _0104_maximum_depth_of_binary_tree;
 pub mod _0383_ransom_note;
 pub mod _0869_reordered_power_of_2;
 pub mod _1329_sort_the_matrix_diagonally;
+pub mod _0108_pascals_triangle;
