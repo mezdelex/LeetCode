@@ -1,4 +1,4 @@
-﻿public record struct PalindromeNumberSolution
+public record struct PalindromeNumberSolution
 {
     public bool IsPalindrome(int x)
     {
@@ -24,11 +24,12 @@ public class PalindromeNumberTests
 {
     [Theory]
     [InlineData(12344321, true)]
+    [InlineData(111, true)]
     [InlineData(-1221, false)]
     [InlineData(0, true)]
     public void Tests(int testNumer, bool expected)
     {
-        PalindromeNumberSolution solution = new PalindromeNumberSolution();
+        PalindromeNumberSolution solution = new();
         Assert.Equal(solution.IsPalindrome(testNumer), expected);
     }
 }

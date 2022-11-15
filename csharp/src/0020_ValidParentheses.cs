@@ -1,9 +1,9 @@
-﻿public record struct ValidParenthesesSolution
+public record struct ValidParenthesesSolution
 {
     public bool IsValid(string s)
     {
-        Stack<char> stack = new Stack<char>();
-        Dictionary<char, char> dictionary = new Dictionary<char, char>(){
+        Stack<char> stack = new();
+        Dictionary<char, char> dictionary = new() {
             {'{', '}'},
             {'[', ']'},
             {'(', ')'}

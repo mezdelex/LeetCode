@@ -94,3 +94,11 @@ fn test3() {
 
     assert_eq!(Solution::max_depth(root3), expected3);
 }
+
+#[test]
+fn test4() {
+    let root4 = Some(Rc::new(RefCell::new(TreeNode::new(2))));
+    let expected4 = 1;
+
+    assert_eq!(Solution::max_depth(root4), expected4);
+}

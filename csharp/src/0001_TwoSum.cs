@@ -2,7 +2,7 @@ public record struct TwoSumSolution
 {
     public int[] TwoSum(int[] nums, int target)
     {
-        Dictionary<int, int> dictionary = new Dictionary<int, int>();
+        Dictionary<int, int> dictionary = new();
 
         for (int i = 0; i < nums.Length; ++i)
         {

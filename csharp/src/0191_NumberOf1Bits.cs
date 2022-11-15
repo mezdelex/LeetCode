@@ -1,4 +1,4 @@
-﻿public record struct NumberOf1BitsSolution
+public record struct NumberOf1BitsSolution
 {
     public int HammingWeight(uint n)
     {

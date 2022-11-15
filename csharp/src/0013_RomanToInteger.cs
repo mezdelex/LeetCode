@@ -1,6 +1,6 @@
-﻿public record struct RomanToIntegerSolution
+public record struct RomanToIntegerSolution
 {
-    private static Dictionary<char, int> fromRomanValue = new Dictionary<char, int>()
+    private static Dictionary<char, int> fromRomanValues = new()
         {
             { 'I', 1 },
             { 'V', 5 },
@@ -14,33 +14,33 @@
     private static void sumValues(Stack<char> stack, ref int sum)
     {
         while (stack.Count > 0)
-            sum += fromRomanValue[stack.Pop()];
+            sum += fromRomanValues[stack.Pop()];
     }
 
-    public int RomanToInt(string s)
+    public int RomanToInt(string input)
     {
         int sum = 0;
-        Stack<char> stack = new Stack<char>();
+        Stack<char> stack = new();
 
-        Enumerable.Range(0, s.Length).ToList().ForEach(index =>
+        Enumerable.Range(0, input.Length).ToList().ForEach(index =>
         {
-            if (stack.Count == 0 || s[index].Equals(stack.Peek()) && stack.Count < 4)
-                stack.Push(s[index]);
+            if (stack.Count == 0 || input[index].Equals(stack.Peek()) && stack.Count < 4)
+                stack.Push(input[index]);
             else
             {
                 if (stack.Count > 1)
                 {
                     sumValues(stack, ref sum);
-                    stack.Push(s[index]);
+                    stack.Push(input[index]);
                 }
                 else
                 {
-                    if (fromRomanValue[s[index]] > fromRomanValue[stack.Peek()])
-                        sum += fromRomanValue[s[index]] - fromRomanValue[stack.Pop()];
+                    if (fromRomanValues[input[index]] > fromRomanValues[stack.Peek()])
+                        sum += fromRomanValues[input[index]] - fromRomanValues[stack.Pop()];
                     else
                     {
-                        sum += fromRomanValue[stack.Pop()];
-                        stack.Push(s[index]);
+                        sum += fromRomanValues[stack.Pop()];
+                        stack.Push(input[index]);
                     }
                 }
             }
