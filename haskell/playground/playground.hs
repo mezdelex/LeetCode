@@ -57,7 +57,10 @@ instance Walkable Color where
   _ === _ = False
 
 shouldICross :: Color -> Bool
-shouldICross s = s === Green
+shouldICross c = c === Green
+
+monadicMapAndFilter :: [Integer] -> [Integer]
+monadicMapAndFilter x = x >>= \a -> [a + 1] >>= \b -> ([b | b /= 3])
 
 main :: IO ()
-main = print $ shouldICross Green
+main = print . sum . monadicMapAndFilter $ [1, 2, 3]
