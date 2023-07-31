@@ -26,11 +26,11 @@ public class NumberOf1BitsTests
     [InlineData("11111111111111111111111111111101", 31)]
     public void Tests(string input, int expected)
     {
-        uint temp = Convert.ToUInt32(input, 2);
+        var temp = Convert.ToUInt32(input, 2);
+        var solution = new NumberOf1BitsSolution();
 
-        NumberOf1BitsSolution solution = new NumberOf1BitsSolution();
-        Assert.Equal(solution.HammingWeight(temp), expected);
-        Assert.Equal(solution.HammingWeightLinQ(temp), expected);
-        Assert.Equal(solution.HammingWeightSystemLibrary(temp), expected);
+        Assert.Equal(expected, solution.HammingWeight(temp));
+        Assert.Equal(expected, solution.HammingWeightLinQ(temp));
+        Assert.Equal(expected, solution.HammingWeightSystemLibrary(temp));
     }
 }

@@ -2,7 +2,7 @@
 {
     public int NumberOfSteps(int num)
     {
-        int steps = 0;
+        var steps = 0;
 
         while (num != 0)
         {
@@ -22,7 +22,8 @@ public class NumberOfStepsToReduceANumberToZeroTests
     [InlineData(123, 12)]
     public void Tests(int input, int expected)
     {
-        NumberOfStepsToReduceANumberToZeroSolution solution = new NumberOfStepsToReduceANumberToZeroSolution();
-        Assert.Equal(solution.NumberOfSteps(input), expected);
+        var solution = new NumberOfStepsToReduceANumberToZeroSolution();
+
+        Assert.Equal(expected, solution.NumberOfSteps(input));
     }
 }

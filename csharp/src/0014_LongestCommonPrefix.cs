@@ -2,13 +2,12 @@
 {
     public string LongestCommonPrefix(string[] strs)
     {
-        string prefix = "";
-
-        int minLength = strs.Select(str => str.Length).Min();
+        var prefix = "";
+        var minLength = strs.Select(s => s.Length).Min();
 
         for (int i = 0; i < minLength; ++i)
         {
-            IEnumerable<char> characters = strs.Select(str => str[i]).Distinct();
+            var characters = strs.Select(s => s[i]).Distinct();
 
             if (characters.Count() > 1)
                 break;
@@ -35,7 +34,8 @@ public class LongestCommonPrefixTests
     [InlineData(new string[] { "flower", "flower", "flower", "flower" }, "flower")]
     public void Tests(string[] input, string expected)
     {
-        LongestCommonPrefixSolution solution = new LongestCommonPrefixSolution();
-        Assert.Equal(solution.LongestCommonPrefix(input), expected);
+        var solution = new LongestCommonPrefixSolution();
+
+        Assert.Equal(expected, solution.LongestCommonPrefix(input));
     }
 }

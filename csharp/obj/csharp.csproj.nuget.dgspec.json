@@ -1,30 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mezdelex\\Workspace\\LeetCode\\csharp\\csharp.csproj": {}
+    "C:\\Users\\alexc\\Workspace\\LeetCode\\csharp\\csharp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mezdelex\\Workspace\\LeetCode\\csharp\\csharp.csproj": {
+    "C:\\Users\\alexc\\Workspace\\LeetCode\\csharp\\csharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mezdelex\\Workspace\\LeetCode\\csharp\\csharp.csproj",
+        "projectUniqueName": "C:\\Users\\alexc\\Workspace\\LeetCode\\csharp\\csharp.csproj",
         "projectName": "csharp",
-        "projectPath": "C:\\Users\\Mezdelex\\Workspace\\LeetCode\\csharp\\csharp.csproj",
-        "packagesPath": "C:\\Users\\Mezdelex\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mezdelex\\Workspace\\LeetCode\\csharp\\obj\\",
+        "projectPath": "C:\\Users\\alexc\\Workspace\\LeetCode\\csharp\\csharp.csproj",
+        "packagesPath": "C:\\Users\\alexc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\alexc\\Workspace\\LeetCode\\csharp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Mezdelex\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\alexc\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net7.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {}
           }
         },
@@ -35,8 +35,8 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
@@ -75,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\Mezdelex\\scoop\\apps\\dotnet6-sdk\\current\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\alexc\\scoop\\apps\\dotnet-sdk\\current\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

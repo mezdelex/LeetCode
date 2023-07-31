@@ -2,14 +2,14 @@ public record struct ValidParenthesesSolution
 {
     public bool IsValid(string s)
     {
-        Stack<char> stack = new();
-        Dictionary<char, char> dictionary = new() {
-            {'{', '}'},
-            {'[', ']'},
-            {'(', ')'}
+        var stack = new Stack<char>();
+        var dictionary = new Dictionary<char, char> {
+            { '{', '}'},
+            { '[', ']'},
+            { '(', ')'}
         };
 
-        foreach (char character in s)
+        foreach (var character in s)
         {
             if (stack.Count != 0 && dictionary[stack.Peek()] == character)
                 stack.Pop();
@@ -33,7 +33,8 @@ public class ValidParenthesesTests
     [InlineData("{[]}", true)]
     public void Tests(string input, bool expected)
     {
-        ValidParenthesesSolution solution = new ValidParenthesesSolution();
-        Assert.Equal(solution.IsValid(input), expected);
+        var solution = new ValidParenthesesSolution();
+
+        Assert.Equal(expected, solution.IsValid(input));
     }
 }

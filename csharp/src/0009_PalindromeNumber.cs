@@ -5,9 +5,9 @@ public record struct PalindromeNumberSolution
         if (x < 0 || x % 10 == 0 && x != 0)
             return false;
 
-        long reversed = 0;
-        int input, digit;
-        input = x;
+        var digit = 0;
+        var input = x;
+        var reversed = 0;
 
         do
         {
@@ -29,7 +29,7 @@ public class PalindromeNumberTests
     [InlineData(0, true)]
     public void Tests(int testNumer, bool expected)
     {
-        PalindromeNumberSolution solution = new();
-        Assert.Equal(solution.IsPalindrome(testNumer), expected);
+        var solution = new PalindromeNumberSolution();
+        Assert.Equal(expected, solution.IsPalindrome(testNumer));
     }
 }

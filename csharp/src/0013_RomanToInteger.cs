@@ -19,8 +19,8 @@ public record struct RomanToIntegerSolution
 
     public int RomanToInt(string input)
     {
-        int sum = 0;
-        Stack<char> stack = new();
+        var sum = 0;
+        var stack = new Stack<char>();
 
         Enumerable.Range(0, input.Length).ToList().ForEach(index =>
         {
@@ -65,7 +65,8 @@ public class RomanToIntegerTests
     [InlineData("DCXXI", 621)]
     public void Tests(string input, int expected)
     {
-        RomanToIntegerSolution solution = new RomanToIntegerSolution();
-        Assert.Equal(solution.RomanToInt(input), expected);
+        var solution = new RomanToIntegerSolution();
+
+        Assert.Equal(expected, solution.RomanToInt(input));
     }
 }
