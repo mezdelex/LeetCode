@@ -1,0 +1,211 @@
+# Rust
+target/
+**/*.rs.bk
+
+# C++
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# VS Code
+.vscode/
+
+# C#
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Mono auto generated files
+mono_crash.*
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# VS Code directories
+.vscode/
+
+# Rider
+.idea/
+
+# Coverity
+.coverity/
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+*.csproj.iml
+
+# Rider temp
+.idea.temp/
+
+# Rider cache
+.idea/caches/
+.idea/solution/
+.idea/modules.xml
+.idea/gradle.xml
+.idea/vcs.xml
+.idea/viewMaps.xml
+.idea/workspace.xml
+.idea/.name
+.idea/uiDesigner.xml
+.idea/ghidra.xml
+.idea/find.xml
+.idea/deployment.xml
+.idea/misc.xml
+
+# Rider plugins
+.idea/libraries/
+
+# Rider deployment
+.idea/deployment.xml
+.idea/vcs.xml
+
+# Rider configuration
+.idea/runConfigurations/
+
+# JetBrains IDEs
+.idea/
+
+# Roslyn Cache
+.vs/
+
+# Rider
+.idea/
+
+# File-based project references
+*.csproj.nuget.dgspec.json
+*.csproj.nuget.g.props
+*.csproj.nuget.g.targets
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code
+.vscode/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.fseventsd
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Custom
+public/
+.env
+
+# Logs
+*.log
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+CMakeScripts/
+Testing/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+
+# Qt
+*.moc
+*.obj
+*.bak
+*.prl
+*.tmp
+*.el
+*.pyc
+*.pyo
+*.rcc
+*.qrc
+
+# Backup
+*.swp
+*.bak
+*.swo
+
+# Directories
+build/
+
