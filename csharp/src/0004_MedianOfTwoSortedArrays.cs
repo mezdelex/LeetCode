@@ -18,7 +18,6 @@ public class MedianOfTwoSortedArraysTests
     [InlineData(new int[] { 4 }, new int[] { 5 }, 4.5)]
     [InlineData(new int[] { 4, 2 }, new int[] { 5 }, 4)]
     [InlineData(new int[] { 4, 5 }, new int[] { 5, 1 }, 4.5)]
-    [InlineData(new int[] { 4 }, new int[] { 5 }, 4.5)]
     public void Tests(int[] nums1, int[] nums2, double median)
     {
         var solution = new MedianOfTwoSortedArrays();
