@@ -53,7 +53,8 @@ public class RoundRobinScheduler
                 currentTime += currentProcess.RemainingTime;
                 currentProcess.CompletionTime = currentTime;
                 currentProcess.TurnaroundTime = currentProcess.CompletionTime;
-                currentProcess.WaitingTime = currentProcess.TurnaroundTime - currentProcess.BurstTime;
+                currentProcess.WaitingTime =
+                    currentProcess.TurnaroundTime - currentProcess.BurstTime;
                 currentProcess.RemainingTime = 0;
             }
         }
@@ -64,8 +65,9 @@ public class RoundRobinScheduler
         Console.WriteLine("PID\tBurst\tCompletion\tTurnaround\tWaiting");
         foreach (var process in processes)
         {
-            Console.WriteLine($"{process.Id}\t{process.BurstTime}\t{process.CompletionTime}\t\t{process.TurnaroundTime}\t\t{process.WaitingTime}");
+            Console.WriteLine(
+                $"{process.Id}\t{process.BurstTime}\t{process.CompletionTime}\t\t{process.TurnaroundTime}\t\t{process.WaitingTime}"
+            );
         }
     }
 }
-

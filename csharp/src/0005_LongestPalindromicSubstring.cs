@@ -16,19 +16,22 @@ public class LongestPalindromicSubstring
         var start = 0;
         var end = 0;
 
-        Enumerable.Range(0, s.Length).ToList().ForEach(i =>
-        {
-            var oddLength = ExpandAroundCenter(s, i, i);
-            var evenLength = ExpandAroundCenter(s, i, i + 1);
-
-            var maxLength = Math.Max(oddLength, evenLength);
-
-            if (maxLength > end - start)
+        Enumerable
+            .Range(0, s.Length)
+            .ToList()
+            .ForEach(i =>
             {
-                start = i - (maxLength - 1) / 2;
-                end = i + maxLength / 2;
-            }
-        });
+                var oddLength = ExpandAroundCenter(s, i, i);
+                var evenLength = ExpandAroundCenter(s, i, i + 1);
+
+                var maxLength = Math.Max(oddLength, evenLength);
+
+                if (maxLength > end - start)
+                {
+                    start = i - (maxLength - 1) / 2;
+                    end = i + maxLength / 2;
+                }
+            });
 
         return s.Substring(start, end - start + 1);
     }

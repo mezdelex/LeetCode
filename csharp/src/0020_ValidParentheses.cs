@@ -3,10 +3,11 @@ public record struct ValidParenthesesSolution
     public bool IsValid(string s)
     {
         var stack = new Stack<char>();
-        var dictionary = new Dictionary<char, char> {
-            { '{', '}'},
-            { '[', ']'},
-            { '(', ')'}
+        var dictionary = new Dictionary<char, char>
+        {
+            { '{', '}' },
+            { '[', ']' },
+            { '(', ')' }
         };
 
         foreach (var character in s)

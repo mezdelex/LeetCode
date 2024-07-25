@@ -7,7 +7,10 @@ public class MedianOfTwoSortedArrays
         if (orderedSecuence.Count % 2 != 0)
             return orderedSecuence[orderedSecuence.Count / 2];
 
-        return (float)(orderedSecuence[orderedSecuence.Count / 2 - 1] + orderedSecuence[orderedSecuence.Count / 2]) / 2;
+        return (float)(
+                orderedSecuence[orderedSecuence.Count / 2 - 1]
+                + orderedSecuence[orderedSecuence.Count / 2]
+            ) / 2;
     }
 }
 

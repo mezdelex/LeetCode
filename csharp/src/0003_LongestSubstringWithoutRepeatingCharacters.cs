@@ -6,15 +6,18 @@ public record struct LongestSubstringWithoutRepeatingCharactersSolution
         var firstIndex = 0;
         var charIndexMap = new Dictionary<char, int>();
 
-        Enumerable.Range(0, s.Length).ToList().ForEach(i =>
-        {
-            if (charIndexMap.ContainsKey(s[i]) && charIndexMap[s[i]] >= firstIndex)
-                firstIndex = charIndexMap[s[i]] + 1;
+        Enumerable
+            .Range(0, s.Length)
+            .ToList()
+            .ForEach(i =>
+            {
+                if (charIndexMap.ContainsKey(s[i]) && charIndexMap[s[i]] >= firstIndex)
+                    firstIndex = charIndexMap[s[i]] + 1;
 
-            charIndexMap[s[i]] = i;
+                charIndexMap[s[i]] = i;
 
-            maxLength = Math.Max(maxLength, i - firstIndex + 1);
-        });
+                maxLength = Math.Max(maxLength, i - firstIndex + 1);
+            });
 
         return maxLength;
     }

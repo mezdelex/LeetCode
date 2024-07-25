@@ -1,6 +1,7 @@
 public record struct RomanToIntegerSolution
 {
-    private static Dictionary<char, int> fromRomanValues = new()
+    private static Dictionary<char, int> fromRomanValues =
+        new()
         {
             { 'I', 1 },
             { 'V', 5 },
@@ -22,29 +23,32 @@ public record struct RomanToIntegerSolution
         var sum = 0;
         var stack = new Stack<char>();
 
-        Enumerable.Range(0, input.Length).ToList().ForEach(index =>
-        {
-            if (stack.Count == 0 || input[index].Equals(stack.Peek()) && stack.Count < 4)
-                stack.Push(input[index]);
-            else
+        Enumerable
+            .Range(0, input.Length)
+            .ToList()
+            .ForEach(index =>
             {
-                if (stack.Count > 1)
-                {
-                    sumValues(stack, ref sum);
+                if (stack.Count == 0 || input[index].Equals(stack.Peek()) && stack.Count < 4)
                     stack.Push(input[index]);
-                }
                 else
                 {
-                    if (fromRomanValues[input[index]] > fromRomanValues[stack.Peek()])
-                        sum += fromRomanValues[input[index]] - fromRomanValues[stack.Pop()];
-                    else
+                    if (stack.Count > 1)
                     {
-                        sum += fromRomanValues[stack.Pop()];
+                        sumValues(stack, ref sum);
                         stack.Push(input[index]);
                     }
+                    else
+                    {
+                        if (fromRomanValues[input[index]] > fromRomanValues[stack.Peek()])
+                            sum += fromRomanValues[input[index]] - fromRomanValues[stack.Pop()];
+                        else
+                        {
+                            sum += fromRomanValues[stack.Pop()];
+                            stack.Push(input[index]);
+                        }
+                    }
                 }
-            }
-        });
+            });
 
         if (stack.Count > 0)
             sumValues(stack, ref sum);
