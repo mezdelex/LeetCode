@@ -1,6 +1,8 @@
-﻿public record struct NumberOfStepsToReduceANumberToZeroSolution
+﻿namespace csharp.src;
+
+public record struct NumberOfStepsToReduceANumberToZeroSolution
 {
-    public int NumberOfSteps(int num)
+    public static int NumberOfSteps(int num)
     {
         var steps = 0;
 
@@ -22,8 +24,6 @@ public class NumberOfStepsToReduceANumberToZeroTests
     [InlineData(123, 12)]
     public void Tests(int input, int expected)
     {
-        var solution = new NumberOfStepsToReduceANumberToZeroSolution();
-
-        Assert.Equal(expected, solution.NumberOfSteps(input));
+        Assert.Equal(expected, NumberOfStepsToReduceANumberToZeroSolution.NumberOfSteps(input));
     }
 }

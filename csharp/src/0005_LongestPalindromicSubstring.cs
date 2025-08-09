@@ -1,6 +1,8 @@
+namespace csharp.src;
+
 public class LongestPalindromicSubstring
 {
-    private int ExpandAroundCenter(string s, int left, int right)
+    private static int ExpandAroundCenter(string s, int left, int right)
     {
         while (left >= 0 && right < s.Length && s[left].Equals(s[right]))
         {
@@ -11,7 +13,7 @@ public class LongestPalindromicSubstring
         return right - left - 1;
     }
 
-    public string LongestPalindrome(string s)
+    public static string LongestPalindrome(string s)
     {
         var start = 0;
         var end = 0;
@@ -45,8 +47,6 @@ public class LongestPalindromicSubstringTests
     [InlineData("addffbffdfu", "dffbffd")]
     public void Tests(string input, string expected)
     {
-        var solution = new LongestPalindromicSubstring();
-
-        Assert.Equal(expected, solution.LongestPalindrome(input));
+        Assert.Equal(expected, LongestPalindromicSubstring.LongestPalindrome(input));
     }
 }

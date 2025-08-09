@@ -1,6 +1,8 @@
-﻿public record struct LongestCommonPrefixSolution
+﻿namespace csharp.src;
+
+public record struct LongestCommonPrefixSolution
 {
-    public string LongestCommonPrefix(string[] strs)
+    public static string LongestCommonPrefix(string[] strs)
     {
         var prefix = "";
         var minLength = strs.Select(s => s.Length).Min();
@@ -10,7 +12,9 @@
             var characters = strs.Select(s => s[i]).Distinct();
 
             if (characters.Count() > 1)
+            {
                 break;
+            }
 
             prefix += characters.LastOrDefault();
         }
@@ -34,8 +38,6 @@ public class LongestCommonPrefixTests
     [InlineData(new string[] { "flower", "flower", "flower", "flower" }, "flower")]
     public void Tests(string[] input, string expected)
     {
-        var solution = new LongestCommonPrefixSolution();
-
-        Assert.Equal(expected, solution.LongestCommonPrefix(input));
+        Assert.Equal(expected, LongestCommonPrefixSolution.LongestCommonPrefix(input));
     }
 }

@@ -1,18 +1,21 @@
+namespace csharp.src;
+
 public record struct PalindromeNumberSolution
 {
-    public bool IsPalindrome(int x)
+    public static bool IsPalindrome(int x)
     {
         if (x < 0 || x % 10 == 0 && x != 0)
+        {
             return false;
+        }
 
-        var digit = 0;
         var input = x;
         var reversed = 0;
 
         do
         {
-            digit = x % 10;
-            x = x / 10;
+            var digit = x % 10;
+            x /= 10;
             reversed = reversed * 10 + digit;
         } while (x != 0);
 
@@ -29,7 +32,6 @@ public class PalindromeNumberTests
     [InlineData(0, true)]
     public void Tests(int testNumer, bool expected)
     {
-        var solution = new PalindromeNumberSolution();
-        Assert.Equal(expected, solution.IsPalindrome(testNumer));
+        Assert.Equal(expected, PalindromeNumberSolution.IsPalindrome(testNumer));
     }
 }

@@ -1,6 +1,8 @@
+namespace csharp.src;
+
 public record struct NumberOf1BitsSolution
 {
-    public int HammingWeight(uint n)
+    public static int HammingWeight(uint n)
     {
         uint counter = 0;
 
@@ -13,9 +15,10 @@ public record struct NumberOf1BitsSolution
         return (int)counter;
     }
 
-    public int HammingWeightLinQ(uint n) => Convert.ToString(n, 2).Count(bit => bit == '1');
+    public static int HammingWeightLinQ(uint n) =>
+        Convert.ToString(n, 2).Count(bit => bit.Equals('1'));
 
-    public int HammingWeightSystemLibrary(uint n) => System.Numerics.BitOperations.PopCount(n);
+    public static int HammingWeightSystemLibrary(uint n) => BitOperations.PopCount(n);
 }
 
 public class NumberOf1BitsTests
@@ -26,11 +29,10 @@ public class NumberOf1BitsTests
     [InlineData("11111111111111111111111111111101", 31)]
     public void Tests(string input, int expected)
     {
-        var temp = Convert.ToUInt32(input, 2);
-        var solution = new NumberOf1BitsSolution();
+        var uintInput = Convert.ToUInt32(input, 2);
 
-        Assert.Equal(expected, solution.HammingWeight(temp));
-        Assert.Equal(expected, solution.HammingWeightLinQ(temp));
-        Assert.Equal(expected, solution.HammingWeightSystemLibrary(temp));
+        Assert.Equal(expected, NumberOf1BitsSolution.HammingWeight(uintInput));
+        Assert.Equal(expected, NumberOf1BitsSolution.HammingWeightLinQ(uintInput));
+        Assert.Equal(expected, NumberOf1BitsSolution.HammingWeightSystemLibrary(uintInput));
     }
 }

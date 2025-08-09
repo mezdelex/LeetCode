@@ -1,31 +1,20 @@
-public class Process
+namespace csharp.src;
+
+public class Process(int id, int burstTime)
 {
-    public int Id { get; set; }
-    public int BurstTime { get; set; }
-    public int RemainingTime { get; set; }
+    public int Id { get; set; } = id;
+    public int BurstTime { get; set; } = burstTime;
+    public int RemainingTime { get; set; } = burstTime;
     public int CompletionTime { get; set; }
     public int TurnaroundTime { get; set; }
     public int WaitingTime { get; set; }
-
-    public Process(int id, int burstTime)
-    {
-        Id = id;
-        BurstTime = burstTime;
-        RemainingTime = burstTime;
-    }
 }
 
 public class RoundRobinScheduler
 {
-    public static void Main(string[] args)
+    public static void Main(string[] _)
     {
-        var processes = new List<Process>
-        {
-            new Process(1, 10),
-            new Process(2, 4),
-            new Process(3, 5),
-            new Process(4, 7)
-        };
+        var processes = new List<Process> { new(1, 10), new(2, 4), new(3, 5), new(4, 7) };
 
         var quantum = 3;
 

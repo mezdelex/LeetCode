@@ -1,24 +1,9 @@
+namespace csharp.src;
+
 public record struct Frecuency
 {
-    private static int GetFrecuencySimple(string[] items) =>
+    private static int GetFrecuency(string[] items) =>
         items.Select(s => s.Order().Aggregate("", (acc, next) => acc += next)).ToHashSet().Count;
-
-    private static int GetFrecuency(string[] items)
-    {
-        var listOfDicts = items.Select(s =>
-            s.Order().GroupBy(c => c).Select((g) => (g.Key, g.Count())).ToDictionary()
-        );
-
-        return (
-            listOfDicts
-                .Select(d =>
-                    d.Select((dict) => $"{dict.Key}{dict.Value}")
-                        .Aggregate((acc, next) => acc + next)
-                )
-                .ToHashSet()
-                .Count()
-        );
-    }
 
     public class FrecuencyTests()
     {
@@ -30,7 +15,6 @@ public record struct Frecuency
         public void Tests(string[] input, int expected)
         {
             Assert.Equal(expected, GetFrecuency(input));
-            Assert.Equal(expected, GetFrecuencySimple(input));
         }
     }
 }

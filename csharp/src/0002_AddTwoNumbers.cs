@@ -1,28 +1,24 @@
-using System.Diagnostics.CodeAnalysis;
+namespace csharp.src;
 
-public class ListNode
+public class ListNode(int val = 0, ListNode? next = null)
 {
-    public int val { get; set; }
-    public ListNode? next { get; set; }
-
-    public ListNode(int val = 0, ListNode? next = null)
-    {
-        this.val = val;
-        this.next = next;
-    }
+    public int Val { get; set; } = val;
+    public ListNode? Next { get; set; } = next;
 }
 
 public record struct AddTwoNumbersSolution
 {
-    public ListNode? AddTwoNumbers(ListNode? l1, ListNode? l2, int carry = 0)
+    public static ListNode? AddTwoNumbers(ListNode? l1, ListNode? l2, int carry = 0)
     {
         if (l1 == null && l2 == null && carry == 0)
+        {
             return null;
+        }
 
-        var total = (l1 != null ? l1.val : 0) + (l2 != null ? l2.val : 0) + carry;
+        var total = (l1 != null ? l1.Val : 0) + (l2 != null ? l2.Val : 0) + carry;
         carry = total / 10;
 
-        return new ListNode(total % 10, AddTwoNumbers(l1?.next, l2?.next, carry));
+        return new ListNode(total % 10, AddTwoNumbers(l1?.Next, l2?.Next, carry));
     }
 }
 
@@ -32,11 +28,15 @@ public class ListNodeEqualityComparer : IEqualityComparer<ListNode>
     {
         while (x != null && y != null)
         {
-            if (x.val != y.val)
+            if (x.Val != y.Val)
+            {
                 return false;
-            x = x.next;
-            y = y.next;
+            }
+
+            x = x.Next;
+            y = y.Next;
         }
+
         return x == null && y == null;
     }
 
@@ -52,27 +52,26 @@ public class AddTwoNumbersSolutionTests
     [MemberData(nameof(GetTestData))]
     public void Tests(ListNode l1, ListNode l2, ListNode expected)
     {
-        var solution = new AddTwoNumbersSolution();
-
         Assert.True(
-            new ListNodeEqualityComparer().Equals(expected, solution.AddTwoNumbers(l1, l2))
+            new ListNodeEqualityComparer().Equals(
+                expected,
+                AddTwoNumbersSolution.AddTwoNumbers(l1, l2)
+            )
         );
     }
 
-    public static IEnumerable<object[]> GetTestData()
-    {
-        yield return new ListNode[]
+    public static TheoryData<ListNode, ListNode, ListNode> GetTestData =>
+        new()
         {
-            new ListNode(2, new ListNode(3, new ListNode(1))),
-            new ListNode(2),
-            new ListNode(4, new ListNode(3, new ListNode(1)))
+            {
+                new ListNode(2, new ListNode(3, new ListNode(1))),
+                new ListNode(2),
+                new ListNode(4, new ListNode(3, new ListNode(1)))
+            },
+            {
+                new ListNode(2, new ListNode(4, new ListNode(3))),
+                new ListNode(5, new ListNode(6, new ListNode(4))),
+                new ListNode(7, new ListNode(0, new ListNode(8)))
+            },
         };
-
-        yield return new ListNode[]
-        {
-            new ListNode(2, new ListNode(4, new ListNode(3))),
-            new ListNode(5, new ListNode(6, new ListNode(4))),
-            new ListNode(7, new ListNode(0, new ListNode(8)))
-        };
-    }
 }

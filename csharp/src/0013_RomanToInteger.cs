@@ -1,24 +1,27 @@
-public record struct RomanToIntegerSolution
-{
-    private static Dictionary<char, int> fromRomanValues =
-        new()
-        {
-            { 'I', 1 },
-            { 'V', 5 },
-            { 'X', 10 },
-            { 'L', 50 },
-            { 'C', 100 },
-            { 'D', 500 },
-            { 'M', 1000 },
-        };
+namespace csharp.src;
 
-    private static void sumValues(Stack<char> stack, ref int sum)
+public readonly record struct RomanToIntegerSolution
+{
+    private static readonly Dictionary<char, int> _fromRomanValues = new()
+    {
+        { 'I', 1 },
+        { 'V', 5 },
+        { 'X', 10 },
+        { 'L', 50 },
+        { 'C', 100 },
+        { 'D', 500 },
+        { 'M', 1000 },
+    };
+
+    private static void SumValues(Stack<char> stack, ref int sum)
     {
         while (stack.Count > 0)
-            sum += fromRomanValues[stack.Pop()];
+        {
+            sum += _fromRomanValues[stack.Pop()];
+        }
     }
 
-    public int RomanToInt(string input)
+    public static int RomanToInt(string input)
     {
         var sum = 0;
         var stack = new Stack<char>();
@@ -29,21 +32,25 @@ public record struct RomanToIntegerSolution
             .ForEach(index =>
             {
                 if (stack.Count == 0 || input[index].Equals(stack.Peek()) && stack.Count < 4)
+                {
                     stack.Push(input[index]);
+                }
                 else
                 {
                     if (stack.Count > 1)
                     {
-                        sumValues(stack, ref sum);
+                        SumValues(stack, ref sum);
                         stack.Push(input[index]);
                     }
                     else
                     {
-                        if (fromRomanValues[input[index]] > fromRomanValues[stack.Peek()])
-                            sum += fromRomanValues[input[index]] - fromRomanValues[stack.Pop()];
+                        if (_fromRomanValues[input[index]] > _fromRomanValues[stack.Peek()])
+                        {
+                            sum += _fromRomanValues[input[index]] - _fromRomanValues[stack.Pop()];
+                        }
                         else
                         {
-                            sum += fromRomanValues[stack.Pop()];
+                            sum += _fromRomanValues[stack.Pop()];
                             stack.Push(input[index]);
                         }
                     }
@@ -51,7 +58,9 @@ public record struct RomanToIntegerSolution
             });
 
         if (stack.Count > 0)
-            sumValues(stack, ref sum);
+        {
+            SumValues(stack, ref sum);
+        }
 
         return sum;
     }
@@ -69,8 +78,6 @@ public class RomanToIntegerTests
     [InlineData("DCXXI", 621)]
     public void Tests(string input, int expected)
     {
-        var solution = new RomanToIntegerSolution();
-
-        Assert.Equal(expected, solution.RomanToInt(input));
+        Assert.Equal(expected, RomanToIntegerSolution.RomanToInt(input));
     }
 }
